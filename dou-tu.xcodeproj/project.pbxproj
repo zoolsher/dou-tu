@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AF4737A524042174A729F00 /* libPods-dou-tu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06983E098E5E6BAE741F5FC6 /* libPods-dou-tu.a */; };
+		C323120C1F740CA600AC0864 /* DouTuCore.m in Sources */ = {isa = PBXBuildFile; fileRef = C323120B1F740CA600AC0864 /* DouTuCore.m */; };
+		C37A52611F7D39DB00F038F9 /* DouTuLa.m in Sources */ = {isa = PBXBuildFile; fileRef = C37A52601F7D39DB00F038F9 /* DouTuLa.m */; };
+		C37A52651F7D3AEC00F038F9 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C37A52641F7D3AEC00F038F9 /* Utils.m */; };
+		C39702E01F7544F2009074C7 /* ImageTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C39702DE1F7544F2009074C7 /* ImageTableItem.m */; };
+		C39702E11F7544F2009074C7 /* ImageTableItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = C39702DF1F7544F2009074C7 /* ImageTableItem.xib */; };
+		C3AC67751F740026009CAE18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AC67741F740026009CAE18 /* AppDelegate.m */; };
+		C3AC67781F740026009CAE18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AC67771F740026009CAE18 /* ViewController.m */; };
+		C3AC677A1F740026009CAE18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3AC67791F740026009CAE18 /* Assets.xcassets */; };
+		C3AC677D1F740026009CAE18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3AC677B1F740026009CAE18 /* Main.storyboard */; };
+		C3AC67801F740026009CAE18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AC677F1F740026009CAE18 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06983E098E5E6BAE741F5FC6 /* libPods-dou-tu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dou-tu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68215B2EAABD99D0CF4C34FC /* Pods-dou-tu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dou-tu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dou-tu/Pods-dou-tu.debug.xcconfig"; sourceTree = "<group>"; };
+		B38828D0652B41FF347F3D5C /* Pods-dou-tu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dou-tu.release.xcconfig"; path = "Pods/Target Support Files/Pods-dou-tu/Pods-dou-tu.release.xcconfig"; sourceTree = "<group>"; };
+		C32312071F74099F00AC0864 /* dou-tu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "dou-tu.entitlements"; sourceTree = "<group>"; };
+		C323120B1F740CA600AC0864 /* DouTuCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DouTuCore.m; sourceTree = "<group>"; };
+		C323120D1F740CD300AC0864 /* DouTuCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DouTuCore.h; sourceTree = "<group>"; };
+		C37A525F1F7D399B00F038F9 /* ImageProto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageProto.h; sourceTree = "<group>"; };
+		C37A52601F7D39DB00F038F9 /* DouTuLa.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DouTuLa.m; sourceTree = "<group>"; };
+		C37A52621F7D39EA00F038F9 /* DouTuLa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DouTuLa.h; sourceTree = "<group>"; };
+		C37A52631F7D3AD700F038F9 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		C37A52641F7D3AEC00F038F9 /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		C39702DD1F7544F2009074C7 /* ImageTableItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageTableItem.h; sourceTree = "<group>"; };
+		C39702DE1F7544F2009074C7 /* ImageTableItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageTableItem.m; sourceTree = "<group>"; };
+		C39702DF1F7544F2009074C7 /* ImageTableItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableItem.xib; sourceTree = "<group>"; };
+		C3AC67701F740026009CAE18 /* dou-tu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dou-tu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3AC67731F740026009CAE18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C3AC67741F740026009CAE18 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C3AC67761F740026009CAE18 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C3AC67771F740026009CAE18 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C3AC67791F740026009CAE18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3AC677C1F740026009CAE18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3AC677E1F740026009CAE18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3AC677F1F740026009CAE18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3AC67811F740026009CAE18 /* dou_tu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dou_tu.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3AC676D1F740026009CAE18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF4737A524042174A729F00 /* libPods-dou-tu.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BAAB9A6D37AC906A3B8ADDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06983E098E5E6BAE741F5FC6 /* libPods-dou-tu.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F02CA6839DB45146587942E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68215B2EAABD99D0CF4C34FC /* Pods-dou-tu.debug.xcconfig */,
+				B38828D0652B41FF347F3D5C /* Pods-dou-tu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C37A525B1F7D374700F038F9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C3AC67761F740026009CAE18 /* ViewController.h */,
+				C3AC67771F740026009CAE18 /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C37A525C1F7D375800F038F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C39702DD1F7544F2009074C7 /* ImageTableItem.h */,
+				C39702DE1F7544F2009074C7 /* ImageTableItem.m */,
+				C39702DF1F7544F2009074C7 /* ImageTableItem.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C37A525D1F7D376600F038F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C37A525E1F7D37FA00F038F9 /* Adapters */,
+				C323120B1F740CA600AC0864 /* DouTuCore.m */,
+				C323120D1F740CD300AC0864 /* DouTuCore.h */,
+				C37A525F1F7D399B00F038F9 /* ImageProto.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C37A525E1F7D37FA00F038F9 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				C37A52601F7D39DB00F038F9 /* DouTuLa.m */,
+				C37A52621F7D39EA00F038F9 /* DouTuLa.h */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		C3AC67671F740026009CAE18 = {
+			isa = PBXGroup;
+			children = (
+				C3AC67721F740026009CAE18 /* dou-tu */,
+				C3AC67711F740026009CAE18 /* Products */,
+				6F02CA6839DB45146587942E /* Pods */,
+				0BAAB9A6D37AC906A3B8ADDE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C3AC67711F740026009CAE18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3AC67701F740026009CAE18 /* dou-tu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3AC67721F740026009CAE18 /* dou-tu */ = {
+			isa = PBXGroup;
+			children = (
+				C37A525D1F7D376600F038F9 /* Model */,
+				C37A525C1F7D375800F038F9 /* View */,
+				C37A525B1F7D374700F038F9 /* ViewController */,
+				C32312071F74099F00AC0864 /* dou-tu.entitlements */,
+				C3AC67731F740026009CAE18 /* AppDelegate.h */,
+				C3AC67741F740026009CAE18 /* AppDelegate.m */,
+				C3AC67791F740026009CAE18 /* Assets.xcassets */,
+				C3AC677B1F740026009CAE18 /* Main.storyboard */,
+				C3AC677E1F740026009CAE18 /* Info.plist */,
+				C3AC677F1F740026009CAE18 /* main.m */,
+				C3AC67811F740026009CAE18 /* dou_tu.entitlements */,
+				C37A52631F7D3AD700F038F9 /* Utils.h */,
+				C37A52641F7D3AEC00F038F9 /* Utils.m */,
+			);
+			path = "dou-tu";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3AC676F1F740026009CAE18 /* dou-tu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3AC67841F740026009CAE18 /* Build configuration list for PBXNativeTarget "dou-tu" */;
+			buildPhases = (
+				A45973492F1F1C140EEB1B7C /* [CP] Check Pods Manifest.lock */,
+				C3AC676C1F740026009CAE18 /* Sources */,
+				C3AC676D1F740026009CAE18 /* Frameworks */,
+				C3AC676E1F740026009CAE18 /* Resources */,
+				E39D0B07DF29577A3AC7FBCA /* [CP] Embed Pods Frameworks */,
+				2EB177AE7CABFD271EFABCA2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dou-tu";
+			productName = "dou-tu";
+			productReference = C3AC67701F740026009CAE18 /* dou-tu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3AC67681F740026009CAE18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = zoolsher;
+				TargetAttributes = {
+					C3AC676F1F740026009CAE18 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C3AC676B1F740026009CAE18 /* Build configuration list for PBXProject "dou-tu" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3AC67671F740026009CAE18;
+			productRefGroup = C3AC67711F740026009CAE18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3AC676F1F740026009CAE18 /* dou-tu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3AC676E1F740026009CAE18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3AC677A1F740026009CAE18 /* Assets.xcassets in Resources */,
+				C39702E11F7544F2009074C7 /* ImageTableItem.xib in Resources */,
+				C3AC677D1F740026009CAE18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EB177AE7CABFD271EFABCA2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dou-tu/Pods-dou-tu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A45973492F1F1C140EEB1B7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E39D0B07DF29577A3AC7FBCA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dou-tu/Pods-dou-tu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3AC676C1F740026009CAE18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C323120C1F740CA600AC0864 /* DouTuCore.m in Sources */,
+				C39702E01F7544F2009074C7 /* ImageTableItem.m in Sources */,
+				C37A52611F7D39DB00F038F9 /* DouTuLa.m in Sources */,
+				C3AC67781F740026009CAE18 /* ViewController.m in Sources */,
+				C3AC67801F740026009CAE18 /* main.m in Sources */,
+				C37A52651F7D3AEC00F038F9 /* Utils.m in Sources */,
+				C3AC67751F740026009CAE18 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C3AC677B1F740026009CAE18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3AC677C1F740026009CAE18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3AC67821F740026009CAE18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C3AC67831F740026009CAE18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C3AC67851F740026009CAE18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68215B2EAABD99D0CF4C34FC /* Pods-dou-tu.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7CRFMVS96A;
+				INFOPLIST_FILE = "dou-tu/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zoolsher.dou-tu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C3AC67861F740026009CAE18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B38828D0652B41FF347F3D5C /* Pods-dou-tu.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7CRFMVS96A;
+				INFOPLIST_FILE = "dou-tu/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zoolsher.dou-tu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3AC676B1F740026009CAE18 /* Build configuration list for PBXProject "dou-tu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3AC67821F740026009CAE18 /* Debug */,
+				C3AC67831F740026009CAE18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3AC67841F740026009CAE18 /* Build configuration list for PBXNativeTarget "dou-tu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3AC67851F740026009CAE18 /* Debug */,
+				C3AC67861F740026009CAE18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3AC67681F740026009CAE18 /* Project object */;
+}
