@@ -8,6 +8,7 @@
 
 #import "ImageTableItem.h"
 #import <AFNetworking.h>
+#import "Utils.h"
 
 @interface ImageTableItem ()
 
@@ -26,16 +27,16 @@
     NSImage *image = [NSImage imageNamed:@"145743e33ae2b7c"];
     [self.imageViewItem setImage:image];
     self.url = str;
-    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
-    
+    AFURLSessionManager *manager = [Utils downloadCenter];
     NSURL *URL = [NSURL URLWithString:self.url];
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
     
     NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:request progress:nil destination:^NSURL *(NSURL *targetPath, NSURLResponse *response) {
-        NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
-        return [documentsDirectoryURL URLByAppendingPathComponent:[response suggestedFilename]];
+        NSURL *tmpDirURL = [NSURL fileURLWithPath:NSTemporaryDirectory() isDirectory:YES];
+        return [tmpDirURL URLByAppendingPathComponent:[response suggestedFilename]];
     } completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
+        if(response.URL.absoluteString != self.url){ return; }
+        NSLog(@"%@",filePath);
         NSImage *image = [[NSImage alloc]initByReferencingURL:filePath];
         [self.imageViewItem setImage:image];
     }];
@@ -50,6 +51,18 @@
     [board clearContents];
     NSArray *copiedObjects = [NSArray arrayWithObject:image];
     [board writeObjects:copiedObjects];
+    self.view.layer.borderWidth = 10;
+    self.view.layer.borderColor = NSColor.blackColor.CGColor;
+    [NSTimer scheduledTimerWithTimeInterval:0.3
+                                     target:self
+                                   selector:@selector(removeBorder)
+                                   userInfo:nil
+                                    repeats:NO];
+}
+
+-(void)removeBorder{
+    self.view.layer.borderWidth = 0;
+    self.view.layer.borderColor = NSColor.blackColor.CGColor;
 }
 
 @end

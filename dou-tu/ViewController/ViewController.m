@@ -40,7 +40,6 @@
     NSCollectionViewFlowLayout* layout = [NSCollectionViewFlowLayout new];
     layout.itemSize = NSMakeSize(100, 100);
     self.imageTable.collectionViewLayout = layout;
-    self.imageTable.layer.backgroundColor = NSColor.blackColor.CGColor;
     NSNib* nib = [[NSNib alloc]initWithNibNamed:@"ImageTableItem" bundle:nil];
     [self.imageTable registerNib:nib forItemWithIdentifier:@"id"];
 }
@@ -57,6 +56,7 @@
         return;
     }
     [self setLoading];
+    [self.imageListUrls removeAllObjects];
     [self.douTuCore getImages:str cb:^(NSMutableArray *list) {
         [self.imageListUrls addObjectsFromArray:list];
         [self.imageTable reloadData];

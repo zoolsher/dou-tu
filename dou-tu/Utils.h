@@ -8,10 +8,13 @@
 
 #ifndef Utils_h
 #define Utils_h
+#import <AFNetworking.h>
 
 @interface Utils : NSObject
 
 +(NSString *)URLEncodedString:(NSString *)str;
++(AFURLSessionManager *) downloadCenter;
++(void)clearTmpDirectory;
 
 @end
 

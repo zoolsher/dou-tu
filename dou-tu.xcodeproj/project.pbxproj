@@ -417,6 +417,7 @@
 				DEVELOPMENT_TEAM = 7CRFMVS96A;
 				INFOPLIST_FILE = "dou-tu/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zoolsher.dou-tu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -432,6 +433,7 @@
 				DEVELOPMENT_TEAM = 7CRFMVS96A;
 				INFOPLIST_FILE = "dou-tu/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zoolsher.dou-tu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

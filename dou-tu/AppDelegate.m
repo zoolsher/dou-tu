@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Utils.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,7 @@
 
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
+    [Utils clearTmpDirectory];
     // Insert code here to tear down your application
 }
 
